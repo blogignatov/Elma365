@@ -31,12 +31,12 @@ MONGO_ON_SEPARATE_SERVER="False"     # False -> подключение чере�
 
 #### PostgreSQL
 ```sh
-PG_CONN_EXTERNAL="postgresql://elma365:Password@192.168.1.21:5432/elma365?sslmode=disable"
+PG_CONN_EXTERNAL="postgresql://elma365:Pass@192.168.1.21:5432/elma365?sslmode=disable"
 ```
 
 #### MongoDB
 ```sh
-MONGO_CONN_EXTERNAL="mongodb://elma365:Password@192.168.1.22:27017/elma365?ssl=false"
+MONGO_CONN_EXTERNAL="mongodb://elma365:Pass@192.168.1.22:27017/elma365?ssl=false"
 ```
 
 ### Исключаемые группы

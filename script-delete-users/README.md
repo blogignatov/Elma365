@@ -31,3 +31,22 @@
 #### Необходимо проверить:
 - **Вручную** проверить файл `users-delete_YYYYmmdd_HHMMSS.CSV` перед удалением.
 
+## Настройки
+
+### 1. Внешнее или внутреннее подключение
+```sh
+POSTGRES_ON_SEPARATE_SERVER="False"  # False -> подключение через kubectl exec
+MONGO_ON_SEPARATE_SERVER="False"     # False -> подключение через kubectl exec
+```
+
+### 2. Строки подключения
+
+#### PostgreSQL
+```sh
+PG_CONN_EXTERNAL="postgresql://elma365:Password@192.168.1.21:5432/elma365?sslmode=disable"
+```
+
+### 3. Исключаемые группы
+```sh
+EXCLUDED_GROUPS="Все пользователи"
+```

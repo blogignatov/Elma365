@@ -24,16 +24,16 @@ MONGO_ON_SEPARATE_SERVER="False"     # False -> через kubectl exec
 # 2. CONNECTION STRING (EXTERNAL ИЛИ INTERNAL)
 ##############################################################################
 # --- PostgreSQL EXTERNAL (пример) ---
-PG_CONN_EXTERNAL="postgresql://elma365:Password@192.168.1.21:5432/elma365?sslmode=disable"
+PG_CONN_EXTERNAL="postgresql://elma365:Pass@192.168.1.21:5432/elma365?sslmode=disable"
 
 # --- Mongo EXTERNAL (пример) ---
-MONGO_CONN_EXTERNAL="mongodb://elma365:Password@192.168.1.22:27017/elma365?ssl=false"
+MONGO_CONN_EXTERNAL="mongodb://elma365:Pass@192.168.1.22:27017/elma365?ssl=false"
 
 # --- PostgreSQL INTERNAL ---
-PG_CONN_INTERNAL="postgresql://postgres:pgpassword@postgres.elma365-dbs.svc.cluster.local:5432/elma365?sslmode=disable"
+PG_CONN_INTERNAL="postgresql://postgres:pgpass@postgres.elma365-dbs.svc.cluster.local:5432/elma365?sslmode=disable"
 
 # --- Mongo INTERNAL ---
-MONGO_CONN_INTERNAL="mongodb://elma365:mpassword@mongo.elma365-dbs.svc.cluster.local:27017/elma365?ssl=false"
+MONGO_CONN_INTERNAL="mongodb://elma365:mpass@mongo.elma365-dbs.svc.cluster.local:27017/elma365?ssl=false"
 
 # Названия коллекций
 MONGO_COLLECTION_AUTH="elma_auth"
